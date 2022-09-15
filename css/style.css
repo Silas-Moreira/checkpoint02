@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  a:hover {
+    background: rgba(92, 89, 89, 0.83);
+  }
+  
+  body {
+    background-image: url("/img/Background-home.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+   background-position: center;
+      
+  }
+  
+  .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0,0, 0, .80);
+      
+  }
+  
+  .lista-menu-topo {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+  }
+  .lista-menu-topo a {
+    display: block;
+  }
+  
+  #bt-mobile{
+    display: none;
+  }
+  @media (max-width: 600px) {
+    
+    .lista-menu-topo {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 100px;
+      right: 0px;
+      background: black;
+      height: 0px;
+      transition: 1s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+  
+    }
+    #nav.active .lista-menu-topo {
+      height: calc(100vh - 100px);
+      visibility: visible;
+      overflow-y: auto;
+  
+    }
+    .lista-menu-topo a {
+      padding: 16px;
+      margin: 0 16px;
+      border-bottom: 2px solid rgba(0,0, 0, .05);
+    }
+    #bt-mobile{
+      display:flex;
+      padding: 10px 10px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 10px;
+    }
+    #hamburguer {
+      border-top: 2px solid;
+      width: 20px;
+      color: white;
+    }
+    #hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  }
+
+  .img-logo{
+  height: 100px;
+  width: 150px;
+  }
+
+  main{
+    background-image: url("./img/background-home.jpg");
+    width: 100%;
+
+  }
