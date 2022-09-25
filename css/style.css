@@ -1,11 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size:x-large;
-  }
+      }
   
   a{
     color: white;
@@ -22,6 +21,7 @@
    background-repeat: no-repeat;
    background-attachment:fixed;
    background-position: center;
+   color:white
       
   }
   
@@ -119,24 +119,121 @@
   }
 
   .img-logo{
-  height: 100px;
-  width: 150px;
+  height: 80px;
+  width: 130px;
   }
 
-  main{
-    background-image: url("./img/background-home.jpg");
-    width: 100%;
-  }
-
-  p:hover{
-    background: rgba(92, 89, 89, 0.83);
-  }
-
- 
 .main{
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content:end;
   height: 100vh;
+  color: white;
 }
+
+/****** section ******/
+
+.btn {
+    border-radius: 5px;
+    padding: 6px 8px;
+  }
+  
+  .btn.btn-banner {
+    color: #ffa500;
+    background-color: white;
+    text-decoration: none;
+  }
+  
+  .btn.btn-banner a:visited {
+    text-decoration: none;
+  }
+  
+  
+  
+   #largura-card {
+    gap: 50px;
+  }
+  #obras h3 {
+    text-align: center;
+  }
+  
+  .modal-body img {
+    width: 100vh;
+    
+
+  }
+  
+  .album .col {
+    height: 420px;
+    width: 320px;
+    background-color: black;
+    color: #ffa500;
+    justify-content: center;
+    box-shadow: 6px 3px 3px #413c41;
+  
+    border-radius: 10px;
+    transition: 0.7s;
+  }
+  
+  .album .col:hover {
+    transform: scale(1.05);
+  }
+  
+  .small-image-container {
+    border-radius: 8px 8px 0 0;
+    margin-top: 10px;
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+  
+  
+  .album h4,
+  .card-text {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .btn.btn-info:hover,
+  .btn.btn-banner:hover {
+  color: #FFF;
+  background-color: #0000ff;
+  }
+  
+  #img-a1 {
+    background-image: url('../img/lebron.jpg');
+  }
+  
+  #img-a2 {
+    background-image: url('../img/jordan.png');
+  }
+  
+  #img-a3 {
+    background-image: url('../img/shaquile.png');
+  }
+
+
+  .rodape{
+    background-color: black;
+  }
+
+  .menu-rodape{
+    color: white;
+    }
+    
+    .circulos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    }
+
+    span{
+        color: white;
+        background: rgba(0,0, 0, .50);
+    }
+  

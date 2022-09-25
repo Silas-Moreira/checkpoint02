@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,7 +12,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 
-<!--Parei o 3 video de cima pra baixo no minuto 45min, para retomar quando chegar em casa-->
 <body>
 
     <header class="header">
@@ -25,21 +25,161 @@
                 </button>
                 <ul class="lista-menu-topo" role="menu">
                     <li><a href="#nav">Home</a></li>
-                    <li><a href="#curiosidades">Jogadores</a></li>
-                    <li><a href="#video">Sobre nós</a></li>
-                    <li><a href="#contato">Login</a></li>
-                </ul>
+                    <li><a href="#jogadores">Jogadores</a></li>
+                    <li><a href="#contato">Sobre nós</a></li>
+                    </ul>
             </nav>
         </div>
     </header>
     <main class="main">
        <div class="home">
-       <h1>NBA GOATS</h1>
+       <h1>NBA Greatest all time</h1>
        <p>Conheça os melhores jogadores de todos os tempos da NBA</p>
-       <button type="button" class="btn btn-outline-danger">Explorar</button>
+       
     </div>
         
     </main>
+    <section>
+        <div class="album py-5 mb-5" id="jogadores">
+            <div class="container">
+                <span><h3>Meu top 3 melhores jogadores!</h3></span>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center" id="largura-card">
+
+                    <div class="col" id="col-01">
+                        <div class="small-image-container center-image" id="img-a1"></div>
+                        <h4>Lebron James</h4>
+                        <p class="card-text">Top 1</p>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                            data-bs-target="#modal-01">Saiba
+                            mais</button>
+                    </div>
+
+                    <div class="modal fade modal-lg" id="modal-01" tabindex="-1" aria-labelledby="modallabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modallable">Lebron James</h5>
+                                    <button class="btn-close" type="button" data-bs-dismiss="modal" arial-label="close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/lebron-dunk1.jpg" class="img-responsive"
+                                        alt="">
+                                    <p class="descricao-modal">
+                                        LeBron conquistou quatro títulos da NBA, quatro prêmios de MVP da NBA e quatro prêmios de MVP de Finais da NBA, além de duas medalhas de ouro olímpicas com a Seleção Americana. LeBron é o segundo maior pontuador (Vai se tornar o primeiro essa temporada) e o sétimo jogador com mais assistências na história da NBA. É o jogador mais completo que já pisou uma quadra de basquete, podendo realizar todas as funções dentro de quadra com muito dominio.
+                                    </p>
+                                </div>
+                                <h2>Vídeo</h2>
+        <div id="video">
+
+            <iframe width="90%" height="360" src="https://www.youtube.com/embed/EZFxHPB_-fk" title="Lebron James Best Career Highlights [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" type="button"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="small-image-container center-image" id="img-a2"></div>
+                        <h4>Michael Jordan </h4>
+                        <p class="card-text">Top 2</p>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                            data-bs-target="#modal-02">Saiba
+                            mais
+                        </button>
+                    </div>
+                    <div class="modal fade modal-lg" id="modal-02" tabindex="-1" aria-labelledby="modallabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modallable">Michael Jordan</h5>
+                                    <button class="btn-close" type="button" data-bs-dismiss="modal" arial-label="close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/jordan-dunk.webp" class="img-responsive" alt="">
+                                    <p class="descricao-modal">
+                                        As pessoas costumam dizer que ele é o melhor de todos os tempos, mas eu que to criando o site e eu prefiro Lebron James kkkkk
+                                    </p>
+                                    <h2>Vídeo</h2>
+        <div>
+
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/8FwgVZdCpGk" title="Michael Jordan Top 10 Plays of Career" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" type="button"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="small-image-container center-image" id="img-a3"></div>
+                        <h4>Shaquille O'neal </h4>
+                        <p class="card-text">Top 3</p>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                            data-bs-target="#modal-03">Saiba
+                            mais
+                        </button>
+                    </div>
+                    <div class="modal fade modal-lg" id="modal-03" tabindex="-1" aria-labelledby="modallabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modallable">Shaquille Oneal</h5>
+                                    <button class="btn-close" type="button" data-bs-dismiss="modal" arial-label="close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/shaq-3.jpg" class="img-responsive" alt="">
+                                    <p class="descricao-modal">
+                                        Foi duas vezes o cestinha da temporada, <br>
+                                        escolhido 15 vezes para o Jogo das Estrelas e 14 vezes para o Melhor Time da NBA.<br>
+                                        Em 1996, apenas seu quarto ano na liga, foi escolhido um dos 50 maiores jogadores da história da NBA e,<br>
+                                         em 2021, foi escolhido um dos 75 maiores jogadores da história da NBA.
+                                         É considerado o jogador mais dominante que já pisou em quadra, em seu auge era imparável, inclusive a NBA criou uma regra especifica, para diminuir sua dominância.
+                                        Em minha opinião ele é o top3, é igual ao Ronaldinho Gaucho no futebol, quando esteve no auge era magia pura.
+                                    </p>
+                                    <h2>Vídeo</h2>
+                                    <div><iframe width="640" height="360" src="https://www.youtube.com/embed/M9PAMJiuOao" title="Shaquille O'Neal's Career Highlights (Hall of Famer 2016)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" type="button"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <footer class="Rodape", id="contato">
+        <div class="circulos">
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/silas-moreira-rodrigues-8213a3105/">
+                    <img src="./img/linkedin.png" class="img-linkedin" alt="Logotipo do linkedin">
+                </a>
+            </div>
+            <div class="github">
+                <a href="https://github.com/Silas-Moreira">
+                    <img src="./img/GitHub.png" class="img-github" alt="Logotipo do github">
+                </a>
+            </div>
+
+        </div>
+       
+    </footer>
 </body>
     <script src="./script/main.js"></script>
 </html>
