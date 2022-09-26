@@ -15,12 +15,12 @@
   }
   
   body {
-   background-image: url("/img/Background-home.jpg");
+   background-image: url("../img/Background-home.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    background-attachment:fixed;
    background-position: center;
-   color:white
+   color:white;
       
   }
   
