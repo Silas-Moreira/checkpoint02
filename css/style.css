@@ -204,14 +204,17 @@
   
   #img-a1 {
     background-image: url('../img/lebron.jpg');
+    width: 90vh;
   }
   
   #img-a2 {
     background-image: url('../img/jordan.png');
+    width: 90vh;
   }
   
   #img-a3 {
     background-image: url('../img/shaquile.png');
+    width: 90vh;
   }
 
 
